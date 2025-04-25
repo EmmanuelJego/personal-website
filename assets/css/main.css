@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: "Funnel Display", sans-serif;
+  @apply h-full bg-slate-50 text-slate-800;
+  @apply scroll-smooth;
+}
+
+p {
+  @apply text-slate-500 pb-2;
+}
+
+.btn-primary {
+  @apply rounded-md bg-primary px-2.5 py-1 text-base font-normal text-white shadow-md hover:bg-primary-hover hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary transition-all
+}
+.btn-secondary {
+  @apply rounded-md bg-slate-50 px-2.5 py-1 text-base font-normal text-primary shadow-md hover:bg-slate-100 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-50 transition-all ring-1 ring-primary/10
+}
+
+h2 {
+  @apply text-3xl font-bold mb-10;
+}
+h3 {
+  @apply text-2xl font-semibold mb-4;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-md bg-slate-50 px-2 py-1 text-xs font-medium text-slate-600 ring-1 ring-inset ring-slate-500/10;
+}
+.badge.skill {
+  @apply !text-sm bg-white shadow-md;
+}
